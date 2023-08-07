@@ -91,6 +91,7 @@
                 font-weight: 600;
                 padding-top: 4%;
                 color: var(--t-color);
+                 text-decoration: none;
             }
 
             .footer {
@@ -1151,6 +1152,7 @@ display: none;
     }
     .contact_text p {
         font-size: .8rem;
+         text-decoration: none;
     }
     .contact_text p i {
         font-size: 1rem;
