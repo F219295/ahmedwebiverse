@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
- 
-
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loadd">
+            <h1><span>Loading...</span></h1></div>
+      </div>
+      
+<div class="main-content">
   <nav class="nav">
     <div class="logo">
         <img src="Logo_Portfolio1.png" alt="Logo_Portfolio_Image_Description">
@@ -38,13 +43,19 @@
 </div> 
 </nav>
 
+
  
 
-  <section id="home">
+  <section id="home" class="section">
   <main class="main">
     <div class="text">
 <h1>Hi, I am Ahmed Mussadiq</h1>
-<h2>Web Developer</h2>
+<section class="animation">
+    <div class="first"><div><h2><span>Web Developer</h2></div></div>
+    <div class="second"><div><h2>Graphics Designer </h2></div></div>
+    <div class="third"><div><h2>E-Commerce Developer</h2></div></div>
+  </section>
+
 <h3>I have a passion for building intuitive, user-friendly interfaces that provide an enjoyable and seamless user experience.
 
 </h3>
@@ -61,7 +72,7 @@
 </section>
 
 
-<section id="about">
+<section id="about" class="section">
 <div class="about_img">
 <img src="Profile_Pic.jpeg" alt="Profile_Pic_Image_Description">
 </div>
@@ -77,7 +88,7 @@
 </section>
 
 
-<section id="skill">
+<section id="skill" class="section">
 <div class="skill_text">
     <h1>My <span>Skills</span></h1>
 <h2>Explore My Skills that I use  in Web Development and how I can add value to your projects.</h2>
@@ -119,8 +130,7 @@
 
 </section>
 
-
-<section id="portfolio">
+<section id="portfolio" class="section"> 
     <h4>Latest <span>Projects</span></h4>
     <h5>Check out my diverse portfolio showcasing my best work in Web Development</h5>
     <div class="portfolio1">
@@ -144,7 +154,7 @@
         
     </div>
     <div class="portfolio2_img">
-        <img src="Portfolio_Screenshots2.JPG" alt="Portfolio_Screenshots2_Image_Description">
+        <img src="Portfolio_Screenshots2.jpg" alt="Portfolio_Screenshots2_Image_Description">
     </div>
    
 </div>
@@ -153,7 +163,7 @@
 
 <div class="portfolio1">
     <div class="portfolio_img">
-        <img src="Portfolio_Screenshots3.JPG" alt="Portfolio_Screenshots3_Image_Description">
+        <img src="Portfolio_Screenshots3.jpg	" alt="Portfolio_Screenshots3_Image_Description">
     </div>
     <div class="portfolio_text">
         <h2>To Do List</h2>
@@ -176,7 +186,7 @@
        
     </div>
     <div class="portfolio2_img">
-        <img src="Portfolio_Screenshots4.JPG" alt="Portfolio_Screenshots4_Image_Description">
+        <img src="Portfolio_Screenshots4.jpg	" alt="Portfolio_Screenshots4_Image_Description">
     </div>
  
 </div>
@@ -186,7 +196,7 @@
 
 
 
-<section id="contact">
+<section id="contact" class="section">
     <div class="contact_text">
         <h1 >Contact <span> Me!</span></h1> 
 <h2>Get in touch with me to discuss your projects and collaborations.</h2>
@@ -219,14 +229,13 @@
     
 </div>
     <input type="hidden" name="_autoresponse" value="Thanks for Your Response.We will reach you soon :" >
-    <input type="hidden" name="_next" value="https://ahmedwebiverse.cbu.net/thanks.html">
+    <input type="hidden" name="_next" value="https://ahmedmussadiq.github.io/ahmedwebiverse/thanks.html">
     
     <input type="hidden" name="_captcha" value="false">
     
     </form>
     </div>
 </section>
-
 
 <footer>
     <div class="footer">
@@ -241,7 +250,30 @@
    
 </div>
 </footer>
+</div>
+<script>
+   
+window.addEventListener("load", function() {
+    const loadingSpinner = document.querySelector(".loader-container");
+      const mainContent = document.querySelector(".main-content");
 
+      loadingSpinner.style.display = "none"; // Hide the loading spinner
+      mainContent.style.display = "block";
+});
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+ 
+            alert("Right-click is not allowed on this website.");
+});
+
+document.addEventListener("dragstart", function(e) {
+    e.preventDefault();
+
+            alert("Drag and Drop is not allowed on this website.");
+});
+
+
+</script>
 <script src="main.js"></script>
 </body>
 </html>
