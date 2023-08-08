@@ -267,6 +267,10 @@ document.addEventListener("dragstart", function(e) {
 
             alert("Drag and Drop is not allowed on this website.");
 });
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    alert("Right Click is not allowed on this website.");
+});
 
 
 </script>
