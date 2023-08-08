@@ -2,7 +2,7 @@
 body{
 	padding: 0;
 	margin: 0;
-    
+    scroll-behavior: smooth; 
      background: var(--bg-color) ;
 }
 *{
@@ -16,6 +16,91 @@ body{
 
    
 }
+.main-content {
+    display: none;
+  }
+  
+  .loader  {
+    animation: rotate 1s infinite;  
+    height: 50px;
+    width: 50px;
+  }
+  
+  .loader:before,
+  .loader:after {   
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 20px;  
+    width: 20px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;  
+    background-color: #cb2025;
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite; 
+    background-color: #00a096;
+    box-shadow: 30px 0 0 #97bf0d;
+  }
+  
+  @keyframes rotate {
+    0% { 
+      -webkit-transform: rotate(0deg) scale(0.8); 
+      -moz-transform: rotate(0deg) scale(0.8);
+    }
+    50% { 
+      -webkit-transform: rotate(360deg) scale(1.2); 
+      -moz-transform: rotate(360deg) scale(1.2);
+    }
+    100% { 
+      -webkit-transform: rotate(720deg) scale(0.8); 
+      -moz-transform: rotate(720deg) scale(0.8);
+    }
+  }
+  
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 #f8b334;
+    }
+    50% {
+      box-shadow: 0 0 0 #f8b334;
+      margin-bottom: 0;
+      -webkit-transform: translate(15px,15px);
+      -moz-transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #f8b334;
+      margin-bottom: 10px;
+    }
+  }
+  .loadd{
+    padding-left: 3%;
+  }
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 #97bf0d;
+    }
+    50% {
+      box-shadow: 0 0 0 #97bf0d;
+      margin-top: -20px;
+      -webkit-transform: translate(15px,15px);
+      -moz-transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #97bf0d;
+      margin-top: 0;
+    }
+  }
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the container to the viewport height */
+    background-color: #C1B6FC; /* Change the background color */
+  }  
 :root {
    
     
@@ -24,8 +109,15 @@ body{
     --t2-color: #6D6A7C;
     --bt2-color:#C1B6FC;
     --bg-color: #FBFBFE;
+    --ani1-color: #694FB9;
+    --ani2-color: #B94F69;
+    --ani3-color: #4FB969;
+    
+    
+   
 
 }
+
 .dark{
     --bt-color: #5A43CB;
     --t-color: #F2F1F3;
@@ -200,7 +292,51 @@ background: var(--bg-color);
 width: 48vw;
 padding-top: 3%;
 padding-left: 6.5%;
+
 }
+.animation {
+    height:50px;
+    overflow:hidden;
+  
+  }
+  
+  .animation > div > div {
+    padding: 0.3rem 0rem;
+    height:2.81rem;
+    margin-bottom: 3.8rem;
+    display:inline-block;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+  .first div h2 {
+ color:var(--ani1-color);
+  }
+  .second div h2{
+    color:var(--ani2-color);
+    
+    
+  }
+  .third div h2{
+    color:var(--ani3-color);
+  }
+ 
+
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
+  
 .main_img{
 width: 48vw;
 padding-left: 10%;
@@ -361,11 +497,20 @@ font-weight: 700;
     transition: transform 0.5s ease;
   padding-left: 3%;
     }
+    .portfolio2_img { animation: fadeIn 5s; }
+    .portfolio_img { animation: fadeIn 5s; }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+      
     .portfolio2_img:hover{
-        transform: scale(0.9); 
+       
     }
     .portfolio_img:hover{
-        transform: scale(0.9); 
+       
     }
     .portfolio2_img img{
         width: 32vw;
