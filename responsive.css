@@ -386,10 +386,20 @@
     }
     
         
+    .menu ul li:hover{   
+        border-radius: 10px;
+        border: 2px solid var(--bt-color);
+        background-color: var(--bt2-color);
+        width:95%;
+        margin: 1%;
+        text-align: center;
+    }
     .menu ul {
         display: flex;
         flex-direction: column;
-        align-items: last baseline;
+        align-items: center;
+       
+        
     }
     .menu.active {
         display: block; /* Show the menu when the toggle button is clicked */
@@ -700,10 +710,20 @@
         }
         
             
+        .menu ul li:hover{   
+            border-radius: 10px;
+            border: 2px solid var(--bt-color);
+            background-color: var(--bt2-color);
+            width:95%;
+            margin: 1%;
+            text-align: center;
+        }
         .menu ul {
             display: flex;
             flex-direction: column;
-            align-items: last baseline;
+            align-items: center;
+           
+            
         }
         .menu.active {
             display: block; /* Show the menu when the toggle button is clicked */
@@ -1014,11 +1034,20 @@ display: none;
   top: 33px;
 }
 
-    
+.menu ul li:hover{   
+    border-radius: 10px;
+    border: 2px solid var(--bt-color);
+    background-color: var(--bt2-color);
+    width:95%;
+    margin: 1%;
+    text-align: center;
+}
 .menu ul {
     display: flex;
     flex-direction: column;
-    align-items: last baseline;
+    align-items: center;
+   
+    
 }
 .menu.active {
     display: block; /* Show the menu when the toggle button is clicked */
@@ -1100,7 +1129,7 @@ display: none;
         display: flex;
         justify-content: space-between;
         padding-left: 0%;
-        padding-right: 0%;
+        padding-right: 5%;
         position: fixed;
         background: var(--bg-color);
         box-shadow: 0 5px 15px rgba(0,0,0,0.06);
@@ -1358,7 +1387,8 @@ display: none;
         display: flex;
         justify-content: space-between;
         padding-left: 0%;
-        padding-right: 0%;
+       
+    padding-right: 10%;
         position: fixed;
         background: var(--bg-color);
         box-shadow: 0 5px 15px rgba(0,0,0,0.06);
