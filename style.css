@@ -113,7 +113,7 @@ body{
     --ani2-color: #B94F69;
     --ani3-color: #4FB969;
     
-    
+  
    
 
 }
@@ -169,7 +169,7 @@ h3{
     left: -1px;
 
     /* border-radius: 100%; */
-    top: -5px;
+   
 }
 
 
@@ -224,6 +224,7 @@ margin-left: 3%;
 .logo{
     width: 30vw;
     padding-top: 1%;
+    padding-bottom: .5%;
 
 }
 .logo img{
@@ -506,12 +507,7 @@ font-weight: 700;
       }
       
       
-    .portfolio2_img:hover{
-       
-    }
-    .portfolio_img:hover{
-       
-    }
+  
     .portfolio2_img img{
         width: 32vw;
         border: 2px solid var(--t-color);
