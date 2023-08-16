@@ -16,6 +16,9 @@ body{
 
    
 }
+.word-spacing {
+  margin-left: 10px; /* Adjust the value as needed */
+}
 .main-content {
     display: none;
   }
