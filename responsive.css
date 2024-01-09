@@ -1,7 +1,79 @@
-@media screen and (max-width: 770px) and (min-width: 527px) {
+@media screen and (max-width: 1115px) and (min-width: 781px) {
+    .menu {
+       
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0; /* Align the menu to the right side */
+        background-color: var(--bg-color);
+        width: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        z-index: 1;
+        flex-direction: column; /* Display menu items in a column */
+        padding-top: 2.1%; 
+    }
+    .menu a:hover::after,
+    .menu a.active::after {
+      background-color: var(--bt-color) ;
+      content: "";
+      width: 10%;
+      height: 3px;
+      position: absolute;
+    display: none;
+      left: 76%;
+      top: 33px;
+    }
+    
+        
+    .menu ul li:hover{   
+        border-radius: 10px;
+        border: 2px solid var(--bt-color);
+        background-color: var(--bt2-color);
+        width:95%;
+        margin: 1%;
+        text-align: center;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+    }
+    .menu.active {
+        display: block; /* Show the menu when the toggle button is clicked */
+    }
+    
+    .toggle-button {
+        display: block; /* Show the toggle button on small screens */
+        cursor: pointer;
+        padding-top: 2%;
+        
+        padding-right: 5%;
+       
+    }
+    
+    
+    
+    #dark-theme-icon{
+        font-size: 16px;
+        border: 2px solid var(--t2-color);
+        border-radius: 30px;
+        padding: .3rem .4rem;
+    }
+    .nav{
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-bottom: 2%;
+        width: 100%;
+    }
+    .menu ul{
+        padding-right: 2%;
+        padding-bottom: 3%;
+    } 
 
     .main_img img {
-        width: 45vw;
+        width: 60vw;
     }  
     .main_img {
         width: 48vw;
@@ -17,6 +89,12 @@
     .bt {
         margin-top: 2%;
         width: 57%;
+    }
+
+    .text {
+        width: 48vw;
+        padding-top: 8%;
+        padding-left: 6.5%;
     }
 
     .about_img img {
@@ -110,7 +188,122 @@
             
             
 }
+@media screen and (max-width: 780px) and (min-width: 527px) {
 
+    .menu {
+       
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0; /* Align the menu to the right side */
+        background-color: var(--bg-color);
+        width: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        z-index: 1;
+        flex-direction: column; /* Display menu items in a column */
+        padding-top: 2.1%; 
+    }
+    .menu a:hover::after,
+    .menu a.active::after {
+      background-color: var(--bt-color) ;
+      content: "";
+      width: 10%;
+      height: 3px;
+      position: absolute;
+    display: none;
+      left: 76%;
+      top: 33px;
+    }
+    
+        
+    .menu ul li:hover{   
+        border-radius: 10px;
+        border: 2px solid var(--bt-color);
+        background-color: var(--bt2-color);
+        width:95%;
+        margin: 1%;
+        text-align: center;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+    }
+    .menu.active {
+        display: block; /* Show the menu when the toggle button is clicked */
+    }
+    
+    .toggle-button {
+        display: block; /* Show the toggle button on small screens */
+        cursor: pointer;
+        padding-top: 2%;
+        
+        padding-right: 5%;
+       
+    }
+
+    
+    
+    #dark-theme-icon{
+        font-size: 16px;
+        border: 2px solid var(--t2-color);
+        border-radius: 30px;
+        padding: .3rem .4rem;
+    }
+    .nav{
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-bottom: 2%;
+        width: 100%;
+    }
+    .menu ul{
+        padding-right: 2%;
+        padding-bottom: 3%;
+    } 
+
+    .main_img img {
+        width: 50vw;
+    }
+    .main_img {
+        width: 53vw;
+        padding-left: 10%;
+        padding-top: 8%;
+    }
+
+    .bt {
+        margin-top: 2%;
+        width: 80%;
+    }
+    .about_img {
+        width: 40vw;
+        padding-left: 12%;
+        padding-top: 15%;
+    }
+    .about_img img {
+        width: 30vw;
+        border: 2px solid var(--t-color);
+        border-radius: 10px;
+    }
+    .bt1 {
+        margin-top: 2%;
+        width: 71%;
+    }
+    .bt2 {
+        margin-top: 2%;
+        width: 62%;
+    }
+    .main {
+        width: 98vw;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5%;
+        padding-top: 20%;
+        background: var(--bg-color);
+    }
+
+}
 @media screen and (max-width: 526px) and (max-height: 750px) {
 
     h1{
